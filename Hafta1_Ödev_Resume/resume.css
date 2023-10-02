@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #6c757d;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+section{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+#aboutMe h1{
+    font-size: 3.25rem;
+    line-height: 1;
+    margin-bottom: 7px !important;
+    text-transform: uppercase;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #343a40;
+}
+#aboutMe h1 span{
+    color:#BD5D38;
+}
+#aboutMe .details{
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 4rem !important;
+}
+#aboutMe .details a{
+    color:#BD5D38;
+}
+#aboutMe p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-indent: 10px;
+    margin-bottom: 5rem !important;
+}
+#aboutMe p::first-letter{
+    font-size: 1.50rem;
+    font-weight: 500;
+}
+.content{
+    position: static;
+    padding-left: 25%;
+    height: auto;
+    width: 100%;
+}
+.social-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    background-color: #495057;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.social-icon svg{
+    width: 50%;
+    height: 50%;
+    text-decoration: none;
+    color: #fff;
+}
+hr{
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 0.25;
+}
+.sectionHeader{
+    margin-bottom: 3rem !important;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #343a40;
+}
+.sectionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+    margin-bottom: 5rem !important;
+}
+.sectionContent{
+    width: 80%;
+}
+.sectionContent div{
+    margin-bottom: 1rem !important;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.sectionContent p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-indent: 10px;
+}
+.sectionContent p a{
+    color: #343a40;
+}
+.sectionContent ul{
+    padding-left: 0px;
+}
+
+.sectionSubHeader{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #343a40;
+}
+.date{
+    color:#BD5D38;
+    font-size: 22px;
+    flex-shrink: 0 !important;
+}
+.sectionContent ul li{
+    margin-left: 2rem;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 0.5rem !important;
+}
+.sectionContent  svg{
+    width: 20px;
+    height: 20px;
+}
+.icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 1.5rem;
+}
+.icon svg{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #6C757D;
+}
+
+
+@media(min-width:768px) {
+    section{
+        min-height: 100vh;
+    }
+}

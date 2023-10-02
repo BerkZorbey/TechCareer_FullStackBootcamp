@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width:25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #BD5D38;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-collapse{
+    display: none;
+}
+.navbar-detail{
+    width: 100%;
+}
+.navbar ul{
+    padding-left: 0px;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 12px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+}
+.navbar ul li:first-child a{
+    color:#fff;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E1B6A5;
+}
+.navbar ul li:not(:first-child) a:hover{
+    color:#D9E1E8;
+}
+.img-profile{
+    width: 200px;
+    height: 200px;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 50% !important;
+}
+.visible{
+    display: block !important;
+}
+@media screen and (max-width:768px) {
+    
+    .img-profile{
+        display: none;
+    }
+    .navbar-detail{
+        position: absolute;
+        background-color: #BD5D38;
+        display: none;
+        top:56px;
+    }
+    ul li{
+        list-style: none;
+        padding: 8px;
+        font-size: 16px;
+        font-family: 'Mulish', sans-serif;
+        text-align: start;
+        padding-left: 16px;
+    }
+    .navbar{
+        width:100vw;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #BD5D38;
+    }
+    .navbar-collapse{
+        width: 100vw;
+        height: 40px;
+        padding: 8px 16px 8px 16px;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .navbar-collapse a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        font-family: 'Mulish', sans-serif;
+    }
+    .collapse{
+    background-color: transparent;
+    color: #E9837C;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.375em;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .collapse i{
+        font-size: 30px !important;
+    }
+    .collapse:focus{
+       border: 5px solid #E9837C;
+    }
+    .content{
+        padding-left: 0% !important;
+    }
+}
