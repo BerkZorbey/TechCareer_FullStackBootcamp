@@ -1,0 +1,207 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    p{
+        font-family: $content-font;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+        width: 50%;
+        margin-bottom: 50px;
+        span{
+            color:#000 !important;
+            font-weight: 400;
+            font-size: 24px !important;
+            text-decoration: underline;
+        }
+    }
+    .blockquote{
+        font-family: $content-font;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+        width: 50%;
+        margin-bottom: 50px;
+        color:$article-meta-color;
+    }
+    img{
+        width: 50%;
+    }
+    span{
+        width: 50%;
+        font-size: 20px;
+        margin-bottom: 0;
+        text-align: center;
+        line-height: 1.5;
+        margin: 10px 0;
+        color: $footer-copyright-color !important;
+    }
+    h3{
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 60px;
+        font-family: $content-font;
+        line-height: 1.5;
+        width: 50%;
+        margin-bottom: 50px; 
+    }
+    hr{
+        width: 50%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    .clearfix{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        .postButton{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 800;
+            padding: 25px 25px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 0;
+            color: #fff;
+            background-color: $label-button-color;
+            border-color: $label-button-color;
+            border: 1px solid transparent;
+            transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    }
+    }
+   
+    #contactForm{
+        width: 50%;
+        .form-group{
+            width: 100%;
+            font-size: 14px;
+             position: relative; 
+             margin-bottom: 1rem;
+             padding-bottom: 0.5em;
+            label{
+                opacity: 0;
+            }
+            input{
+                font-size: 30px;
+                width: 100%;
+                border: none;
+                outline: none;
+                &::placeholder{
+                    color:$placeholder-color;
+                }
+            }
+            p{
+                margin-top: 15px;
+                color:$form-alert-color;
+                font-size: 14px;
+                width: 100%;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $border-bottom-color;
+                ul{
+                    
+                    li{
+                        margin-bottom: 15px;
+                        list-style:disc;
+                        margin-left: 15px;
+                        
+                    }
+                }
+            }
+            textarea{
+                width: 100%;
+                font-size: 30px;
+                position: relative;
+                z-index: 1;
+                padding: 0;
+                resize: none;
+                border: none;
+                outline: none;
+                border-radius: 0;
+                background: none;
+                box-shadow: none !important;
+                &::placeholder{
+                    color:$placeholder-color;
+                }
+            }
+            .button{
+                font-size: 14px;
+                font-weight: 800;
+                padding: 15px 25px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border-radius: 0;
+                color: #fff;
+                background-color: $label-button-color;
+                border-color: $label-button-color;
+                border: 1px solid transparent;
+                transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+            }
+        }
+        .floating-label-form-group-with-value{
+            color:$label-button-color;
+            font-size: 1em;
+            position: relative;
+            display: block;
+            transition: top 1s ease, opacity 1s ease;
+            margin-bottom: 10px;
+                top:0 !important;
+                opacity: 1 !important;
+         }
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    article{
+        width: 60%;
+        a{
+            color: $article-header-color;
+            text-decoration: none;
+            &:hover{
+                color:$article-hover-color;
+            }
+            h2{
+                font-size: 48px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                font-weight: 1000;
+            }
+            h3{
+                font-weight: 300;
+                margin: 0 0 20px;
+                font-size: 2rem; 
+            }
+        }
+        p{
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-style: italic;
+            margin-top: 0;
+            color: $article-meta-color;
+        }
+    }
+    hr{
+        width: 60%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+}
+hr{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
