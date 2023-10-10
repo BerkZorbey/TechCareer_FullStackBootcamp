@@ -27,7 +27,7 @@
         console.log("Order from USA = " + data.filter(x => x.shipAddress.country == "USA").length);
         var orders1996 = data.filter(date=> date.orderDate.startsWith("1996"));
         console.log("orders with an order year of 1996  = ", orders1996);
-        var lateOrders = data.filter(date=> date.requiredDate <= date.shippedDate);
+        var lateOrders = data.filter(date=> date.requiredDate < date.shippedDate);
         console.log("Late orders  = ", lateOrders);
         
     })
