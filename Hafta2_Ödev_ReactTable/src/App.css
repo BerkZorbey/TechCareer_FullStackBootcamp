@@ -1,0 +1,22 @@
+.tableSuppliers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableSuppliers td, .tableSuppliers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tableSuppliers tr:nth-child(even){background-color: #f2f2f2;}
+
+.tableSuppliers tr:hover {background-color: #ddd;}
+
+.tableSuppliers thead {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
